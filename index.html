@@ -553,7 +553,7 @@
     document.addEventListener('DOMContentLoaded', function () {
       const video = document.getElementById('method-comparison-video');
       const controls = document.getElementById('comparison-controls');
-      const scenes = ['0087_02', '0087_02', '0087_02', '0087_02'];
+      const scenes = ['0087_02', '0628_02'];
       const videoPath = './static/videos/';
       let activeScene = `${scenes[0]}`;
 
@@ -571,7 +571,7 @@
         const button = document.createElement('button');
         button.className = 'button is-medium is-rounded dataset-btn';
         button.textContent = scene;
-        button.dataset.scene = `0087_02`;
+        button.dataset.scene = scene;
         controls.querySelector('.buttons').appendChild(button);
       });
 
